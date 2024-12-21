@@ -1,5 +1,14 @@
 <script lang="ts">
-	import Counter from '$lib/components/Counter.svelte';
+	import type { Component } from 'svelte';
+
+	const components: Record<string, { default: Component }> = import.meta.glob(
+		'$lib/components/*.svelte',
+		{ eager: true }
+	);
 </script>
 
-<Counter />
+{#each Object.values(components) as { default: Component }}
+	<div class="flex flex-col gap-4">
+		<Component />
+	</div>
+{/each}
