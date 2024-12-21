@@ -6,6 +6,7 @@
 	}
 </script>
 
+<span>Counter</span>
 <div class="flex w-fit gap-2 border border-gray-300 p-2">
 	<input
 		type="text"
