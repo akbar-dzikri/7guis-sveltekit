@@ -3,6 +3,6 @@
 	let { children } = $props();
 </script>
 
-<main class="flex h-screen flex-col items-center justify-center">
+<main class="flex flex-wrap items-center justify-center gap-4 p-4">
 	{@render children()}
 </main>
