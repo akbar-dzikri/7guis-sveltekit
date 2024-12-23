@@ -8,7 +8,7 @@
 				fahrenheit = '';
 			} else {
 				const f = Number(celcius) * (9 / 5) + 32;
-				fahrenheit = Math.round(f).toString();
+				fahrenheit = f.toFixed(2);
 			}
 		} else {
 			celcius = '';
@@ -21,7 +21,7 @@
 				celcius = '';
 			} else {
 				const c = (Number(fahrenheit) - 32) * (5 / 9);
-				celcius = Math.round(c).toString();
+				celcius = c.toFixed(2);
 			}
 		} else {
 			fahrenheit = '';
